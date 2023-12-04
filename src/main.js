@@ -6,6 +6,8 @@
 // Background Music: https://www.chosic.com/free-music/all/ 
 // Sound Effects: floraphonic and Pixabay
 
+// where I left off: "whoosh" sound effects on Swing state and Circular swing state
+
 'use strict'
 
 const config = {
