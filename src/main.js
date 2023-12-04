@@ -6,6 +6,13 @@
 // Background Music: https://www.chosic.com/free-music/all/ 
 // Sound Effects: floraphonic and Pixabay
 
+// PREMISE:
+//  - The Hero is in a goblin-infested swamp and must kill all goblins to win. If a goblin touches the Hero, the
+//    Hero dies and GAME OVER screen plays. If the Hero wins, a YOU WIN screen plays
+
+// GOALS:
+//  - add a loading screen/bar while Load.js runs
+//  - spawn 10 goblins after 5 seconds and 10 more each 10 seconds till number of goblins reaches 50
 // where I left off: "whoosh" sound effects on Swing state and Circular swing state
 
 'use strict'
