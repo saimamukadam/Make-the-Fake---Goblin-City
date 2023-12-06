@@ -80,7 +80,7 @@ class MoveState extends State {
         // transition to swing if pressing space
         if(Phaser.Input.Keyboard.JustDown(space)) {
             this.stateMachine.transition('swing')
-            //this.sound.play('whoosh1', {volume: 4});
+            this.sound.play('whoosh1', {volume: 4});
             return
         }
 
@@ -92,7 +92,7 @@ class MoveState extends State {
 
         // hurt if H key input (just for demo purposes)
         if(Phaser.Input.Keyboard.JustDown(HKey)) {
-            this.stateMachine.transition('hurt')
+            //this.stateMachine.transition('hurt')
             return
         }
 
