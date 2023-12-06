@@ -92,7 +92,7 @@ class MoveState extends State {
 
         // hurt if H key input (just for demo purposes)
         if(Phaser.Input.Keyboard.JustDown(HKey)) {
-            //this.stateMachine.transition('hurt')
+            this.stateMachine.transition('hurt')
             return
         }
 
@@ -136,7 +136,7 @@ class SwingState extends State {
     enter(scene, hero) {
         hero.setVelocity(0)
         hero.anims.play(`swing-${hero.direction}`)
-        //this.sound.play('whoosh1');
+        scene.sound.play('whoosh1');
         hero.once('animationcomplete', () => {
             this.stateMachine.transition('idle')
         })
@@ -204,7 +204,7 @@ class HurtState extends State {
 class CircularState extends State {
     enter(scene, hero) {
         hero.body.setVelocity(0)
-        //this.sound.play('whoosh2');
+        scene.sound.play('whoosh2');
         hero.anims.play('circular-attack').once('animationcomplete', ()=>{
             this.stateMachine.transition('idle') // transition to idle
         })

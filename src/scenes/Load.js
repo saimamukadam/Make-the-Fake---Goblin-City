@@ -21,8 +21,8 @@ class Load extends Phaser.Scene {
 
         // load sound effects
         this.load.audio('laugh', 'possessed-laugh.wav')
-        this.load.audio('whoosh1', 'metal-whoosh.wav')
-        this.load.audio('whoosh2', 'long-metal-whoosh.wav')
+        this.load.audio('whoosh1', 'metal-whoosh.wav') // these metal whoosh sounds remind me of Hollow Knight
+        this.load.audio('whoosh2', 'long-metal-whoosh.wav') // ^
 
     }
     
