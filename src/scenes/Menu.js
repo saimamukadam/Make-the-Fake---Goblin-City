@@ -6,7 +6,7 @@ class Menu extends Phaser.Scene {
     create() {
         let menuConfig = {
             fontFamily: 'Comic Sans',
-            fontSize: 44,
+            fontSize: 42,
             backgroundColor: '#000000',
             color: '#088F8F', // #6495ED
             align: 'center',
@@ -18,17 +18,29 @@ class Menu extends Phaser.Scene {
         }
 
         // menu text
-        this.add.text(game.config.width/2, game.config.height/2.75 - borderUISize - borderPadding, '˗ˋˏGOBLIN CITYˎˊ˗', menuConfig).setOrigin(0.5);
+        this.add.text(game.config.width/2, game.config.height/3.3 - borderUISize - borderPadding, '˗ˋˏGOBLIN CITYˎˊ˗', menuConfig).setOrigin(0.5);
         
         menuConfig.color = '#6F8FAF';
-        menuConfig.fontSize = 22;
-        this.add.text(game.config.width/2, game.config.height/2.4, 'INSTRUCTIONS:', menuConfig).setOrigin(0.5);
         menuConfig.fontSize = 16;
-        this.add.text(game.config.width/2, game.config.height/2.1, 'TRY NOT TO DIE', menuConfig).setOrigin(0.5);
+        this.add.text(game.config.width/2, game.config.height/2.75, 'INSTRUCTIONS:', menuConfig).setOrigin(0.5);
+        menuConfig.fontSize = 12;
+        this.add.text(game.config.width/2, game.config.height/2.35, 'KILL GOBLINS, TRY NOT TO DIE', menuConfig).setOrigin(0.5);
+
+        menuConfig.fontSize = 16;
+        this.add.text(game.config.width/2, game.config.height/1.95, 'CONTROLS:', menuConfig).setOrigin(0.5);
+        menuConfig.fontSize = 11;
+        this.add.text(game.config.width/2, game.config.height/1.75, 'ARROW KEYS TO MOVE | SPACE/SHIFT/F TO ATTACK | R TO RESTART', menuConfig).setOrigin(0.5);
 
         menuConfig.color = '#ADD8E6';
-        menuConfig.fontSize = 12;
-        this.add.text(game.config.width/2, game.config.height/1.7, 'PRESS (SPACE) TO START', menuConfig).setOrigin(0.5);
+        menuConfig.fontSize = 11;
+        this.add.text(game.config.width/2, game.config.height/1.52, '♱ PRESS (SPACE) TO START ♱', menuConfig).setOrigin(0.5);
+
+        menuConfig.color = '#D3D3D3';
+        menuConfig.fontSize = 9;
+        this.add.text(game.config.width/2, game.config.height/1.33, '🕷 REMAKE OF THE FAKE GAME FROM YU YU HAKUSHO 🕷', menuConfig).setOrigin(0.5);
+        this.add.text(game.config.width/2, game.config.height/1.245, 'DESIGNED BY: SAIMA MUKADAM', menuConfig).setOrigin(0.5);
+        this.add.text(game.config.width/2, game.config.height/1.17, 'MUSIC BY: CHOSIC', menuConfig).setOrigin(0.5);
+        this.add.text(game.config.width/2, game.config.height/1.11, 'ASSETS BY: OSMOSE AND PIXELJAMJAR', menuConfig).setOrigin(0.5);
 
 
         // define keys
