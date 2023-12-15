@@ -1,4 +1,5 @@
 class Load extends Phaser.Scene {
+    /*
     constructor() {
         super('loadScene')
     }
@@ -94,4 +95,5 @@ class Load extends Phaser.Scene {
         this.sound.play('laugh', {volume: 4.5}); // made it louder than bg music so player can get chills
         this.sound.play('bgmusic');
     }
+    */
 }
